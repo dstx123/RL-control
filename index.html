@@ -63,17 +63,23 @@
           <h1 class="title is-1 publication-title">An Advanced Reinforcement Learning Control Method for Legged Robots in Typical Urban Terrains</h1>
           <div class="is-size-4 publication-authors">
             <span class="author-block">
-              <a href="https://github.com/dstx123">Chi Yan<sup>1</sup></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              Ning Wang<sup>2</sup></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="https://github.com/dstx123">Chi Yan<sup>1+</sup></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Ning Wang<sup>2+</sup></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               <a href="https://auto.ustc.edu.cn/2021/0510/c25977a484896/page.htm">Hongbo Gao<sup>1,3,4*</sup></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               Chao Tang<sup>1</sup></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              Xinmiao Wang<sup>1</sup></a>
+              Xinmiao Wang<sup>1</sup></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Lin Zhou<sup>1</sup></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Yuehua Li<sup>5</sup></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Yue Wang<sup>6</sup></a>
               <br><br>
               <center>
                 College of Information Science and Technology, University of Science and Technology of China<sup>1</sup><br>
                 School of Information and Security, Chongqing College of Mobile Communication<sup>2</sup><br>
                 Institute of Advanced Technology, University of Science and Technology of China<sup>3</sup><br>
-                School of Electrical and Electronic Engineering, Nanyang Technological University<sup>4*</sup>
+                School of Electrical and Electronic Engineering, Nanyang Technological University<sup>4*</sup><br>
+                Zhejiang Lab<sup>5</sup><br>
+                College of Control Science and Engineering, Zhejiang University<sup>6</sup><br>
+                These authors contributed equally to this work.<sup>+</sup>
               </center>
             </span>
           </div>
@@ -217,7 +223,7 @@
         <h2 class="title is-2">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Urban environments are often fraught with unstructured terrains, posing significant challenges to robotic locomotion. Quadruped robots, with their remarkable flexibility and stable structures, are uniquely suited to pass through these complex terrains. This capability holds immense potential for applications in transport, search and rescue, among others. Nevertheless, the adaptability of current quadruped robot control methods, which are grounded in reinforcement learning, to the quintessential urban terrains remains suboptimal. In response, this paper introduces an advanced end-to-end teacher-student network framework based on Gated Recurrent Unit, that markedly enhances the training efficiency via large-scale parallel processing. Furthermore, an omnidirectional terrain curriculum learning strategy is proposed in this paper, which facilitates mobility for robots in any direction. By implementing this network within an actual robot, the approach demonstrably enhances the movement capabilities of quadruped robots across common urban terrains.
+            Quadruped robots, with their exceptional flexibility and stable structure, are highly suitable for traversing the complex unstructured terrains in urban environments. However, the current flexibility and stability of quadruped robots based on reinforcement learning are still not ideal in these terrains. To address this limitation, a large-scale parallel technology-based end-to-end teacher-student learning network framework is proposed, where the Gated Recurrent Unit achieves a potential estimation of the heights surrounding the robot. Meanwhile, by introducing an omnidirectional terrain learning curriculum, the robot can move in any commanded direction, achieving smooth output and tracking of motor joint angles. By utilizing state machines, the model trained from the simulation is deployed in the Unitree Go1 robot via zero-shot learning. Simulation and real-world experiments have demonstrated that this approach significantly enhances the robot's adaptability and mobility across various urban terrains such as gravel, grass, slopes, and steps.
           </p>
         </div>
         <div class="is-centered">
